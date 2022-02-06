@@ -1,0 +1,30 @@
+.main-form {
+    width: 550px;
+    margin: 0 auto;
+    margin-top: 150px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.show-pwd{
+    position: relative;
+}
+
+.show-btn {
+    position: absolute;
+    right: 4%;
+    top: 70.5%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #777379;
+    cursor: pointer;
+    display: none;
+}
+
+.show-pwd input:valid ~ span{
+    display: block;
+  }
+.show-pwd span i.hide-btn::before{
+    content: "\f070";
+}
