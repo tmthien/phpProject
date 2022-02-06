@@ -1,4 +1,4 @@
-<div class="footer" style="margin-top:10px;">
+<footer class="footer" style="margin-top:10px;">
     <div class="container">
         <div class="row">
             <div class="col-md-4">
@@ -11,7 +11,7 @@
         </div>
     </div>
     <p>Coppy right @ 2021</p>
-</div>
+</footer>
 
 <?php
     if(!isset($_SESSION['cart'])) {

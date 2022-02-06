@@ -4,7 +4,13 @@
 ?>
    <div class="container">
        <div class="row">
-           <h3 class="page-header">Thanh toán thành công</h3>
+           <div class="col-md-12" style="text-align:center;">
+               <h3 style="color:green;">Thanh toán thành công!</h3>
+               <p>Cảm ơn quý khách đã mua sản phẩm của chúng tôi!</p>
+               <a href="index.php">
+                   <button>Tiếp tục mua hàng</button>
+               </a>
+           </div>
        </div>
    </div>
    <

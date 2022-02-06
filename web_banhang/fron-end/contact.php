@@ -2,16 +2,16 @@
     require_once ('../layouts/header.php');
 
     if(!empty($_POST)) {
-        $first_name = getPost['first_name'];
-        $last_name = getPost['last_name'];
-        $email = getPost['email'];
-        $phone_number = getPost['phone_number'];
-        $subject_name = getPost['subject_name'];
-        $note = getPost['note'];
+        $first_name = getPost('first_name');
+        $last_name = getPost('last_name');
+        $email = getPost('email');
+        $phone_number = getPost('phone_number');
+        $subject_name = getPost('subject_name');
+        $note = getPost('note');
         $created_at = $updated_at = date('Y-m-d H:i:s');
 
-        $sql = "INSERT INTO feedback (firstname, lastname, email, phone_number, subject_name, note, created_at, updated_at)
-        values ('$first_name', '$last_name', '$email', $phone_number, '$subject_name', '$note, '$created_at', '$updated_at";
+        $sql = "INSERT INTO feedback (firstname, lastname, email, phone_number, subject_name, note, status, created_at, updated_at)
+        values ('$first_name', '$last_name', '$email', '$phone_number', '$subject_name', '$note', '0', '$created_at', '$updated_at')";
         execute($sql);
     }
 
@@ -25,7 +25,7 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input required="true" type="text" placeholder="Nhập Họ " class="form-control" id="usr" name="first_tname">
+                                    <input required="true" type="text" placeholder="Nhập Họ " class="form-control" id="usr" name="first_name">
                                 </div>
                             </div>
                             <div class="col-md-6">

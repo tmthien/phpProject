@@ -9,7 +9,7 @@
 ?>  
     <div class="row">
         <div class="col-md-12">
-            <h1 class="text-center pt-4 pb-4">Quản lý Phản hồi</h1>
+            <h1 class="text-center pt-4 pb-4">Quản lý đơn hàng</h1>
             <table class="table table-bordered table-hover table-reponsive mx-2" style="width: 99%;">
                 <thead>
                     <tr>

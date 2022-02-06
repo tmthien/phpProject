@@ -37,13 +37,12 @@
 
         $orderDate = date('Y-m-d H:i:s');
         $totalMoney = 0;
-
         foreach($_SESSION['cart'] as $item) {
             $totalMoney += $item['discount'] * $item['num'];
         }
 
-        $sql = "INSERT INTO orders(user_id, fullname, email, phone_number, address, note, order_date, status, total_money)
-        values($userId, $fullname, $email, $phone_number, $address, $note, $orderDate, 1, $totalMoney)";
+        $sql = "INSERT INTO orders(user_id, fullname, email, phone_number, address, note, order_date, total_money)
+        values('$userId', '$fullname', '$email', '$phone_number', '$address', '$note', '$orderDate', '$totalMoney')";
         execute($sql);
 
         $sql = "SELECT * FROM orders WHERE order_date = '$orderDate'";
@@ -58,7 +57,7 @@
             $totalMoney = $price * $num;
         
             $sql = "INSERT INTO order_details(order_id, product_id, price, num, total_money)
-            values ($orderId, $product_id, $price, $num, $totalMoney)";
+            values ('$orderId', '$product_id', '$price', '$num', '$totalMoney')";
             execute($sql);
         }
 

@@ -9,8 +9,8 @@
                         <h3>Giỏ hàng</h3>
                         <div class="panel-body">
                                 <div class="form-group">
-                                    <label for="usr">Tên:</label>
-                                    <input required="true" type="text" placeholder="Nhập Họ Tên" class="form-control" id="usr" name="fullname">
+                                    <label for="fullname">Tên:</label>
+                                    <input required="true" type="text" placeholder="Nhập Họ Tên" class="form-control" id="fullname" name="fullname">
                                 </div>
                                 <div class="form-group">
                                     <label for="email">Email:</label>
@@ -82,7 +82,6 @@
             })
             return false;
         }
-
     </script>
 
 <?php

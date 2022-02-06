@@ -58,6 +58,13 @@
 
 .footer {
     background-color: rgb(54, 252, 252);
+    position: relative;
+     width: 100%;
+     height: auto;
+     padding: 50px 100px;
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
 }
 
 .footer li {
